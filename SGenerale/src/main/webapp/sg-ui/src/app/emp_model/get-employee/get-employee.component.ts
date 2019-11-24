@@ -9,7 +9,7 @@ import { EmployeeService } from '../employee.service';
 })
 export class GetEmployeeComponent implements OnInit {
 	
-	emps: Employee[];
+  emps: Employee[];
 
   constructor(private employeeService: EmployeeService) { }
 
@@ -19,8 +19,10 @@ export class GetEmployeeComponent implements OnInit {
 	});
   }
 
-sortBy(prop: string) {
-  return this.emps.sort((a, b) => a[prop] > b[prop] ? 1 : a[prop] <= b[prop] ? -1 : 0);
-}
+  sortBy(prop: string) {
+	if(this.emps.length > 0){
+		return this.emps.sort((a, b) => a[prop] > b[prop] ? 1 : a[prop] <= b[prop] ? -1 : 0);
+	}
+  }
 
 }

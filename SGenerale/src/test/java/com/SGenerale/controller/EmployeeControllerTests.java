@@ -1,6 +1,6 @@
 package com.SGenerale.controller;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.text.ParseException;
 import java.time.LocalDate;
@@ -9,17 +9,12 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.ResponseEntity;
-import org.springframework.test.context.junit4.SpringRunner;
 
 import com.SGenerale.entity.Employee;
 
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class EmployeeControllerTests {
+class EmployeeControllerTests {
 
 	@Autowired
 	private EmployeeController employeeController;
@@ -27,7 +22,7 @@ public class EmployeeControllerTests {
 	@Test
 	public void getEmployeesTest() {
 		List<Employee> emps = employeeController.getEmployees();
-		assertNotNull(emps);
+		assertNotEquals(emps.size(), 0);
 	}
 	
 	@Test
@@ -39,4 +34,5 @@ public class EmployeeControllerTests {
 		assertEquals(200, response.getStatusCodeValue());
 //		assertEquals("Employee data saved successfully", response.getBody().get("Message"));
 	}
+
 }
