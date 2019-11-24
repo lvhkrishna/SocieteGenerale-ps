@@ -17,7 +17,7 @@ Project Setup:
 
 Running the project - Back End:
 1. In Eclipse, Right click on the project in Package Explorer -> Run As -> Spring Boot App
-2. back-end runs on port 8080 (localhost:8080)
+2. Back-end runs on port 8080 (localhost:8080)
 
 Running the project - Front End:
 1. In command prompt cd to /SGenerale/src/main/webapp/sg-ui folder as already done above
