@@ -14,10 +14,12 @@ export class SaveEmployeeComponent implements OnInit {
 	emp: Employee;
 	startDate: Date;
 	pipe: DatePipe;
-	localeValue: string
+	localeValue: string;
+	maxDate: Date;
 
   constructor(private toastr: ToastrService, private employeeService: EmployeeService) { 
 	this.emp = new Employee();
+	this.maxDate = new Date();
 }
 
   ngOnInit() {

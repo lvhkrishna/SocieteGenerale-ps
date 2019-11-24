@@ -24,7 +24,7 @@
 		</div>
 		<div class="form-group full-width">
 			<mat-form-field>
-				<input matInput [matDatepicker]="picker" [(ngModel)]="emp.dob" name="dob"
+				<input matInput [matDatepicker]="picker" [max]="maxDate" [(ngModel)]="emp.dob" name="dob"
 					placeholder="Date of Birth" required>
 				<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
 				<mat-datepicker #picker startView="multi-year" [startAt]="startDate"></mat-datepicker>
