@@ -8,7 +8,7 @@ Software/IDEs to install:
 4. Install "Spring Tools 4 - for Spring Boot" from Help -> Eclipse Marketplace
 
 Project Setup:
-1. Download the zip file from GitHub
+1. Download the zip file from GitHub - "https://github.com/lvhkrishna/SocieteGenerale-ps"
 2. Import the project into Eclipse as Maven project (File -> Import -> Maven -> Existing Maven Projects))
 3. Update the project (Right click on the project in Eclipse -> Maven -> Update Project)
 4. Now Open Command Prompt
