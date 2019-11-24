@@ -6,6 +6,7 @@ Software/IDEs to install:
 2. Angular-cli (Using command npm install -g @angular/cli) - Global Install
 3. Eclipse (https://www.eclipse.org/downloads/)
 4. Install "Spring Tools 4 - for Spring Boot" from Help -> Eclipse Marketplace
+5. Also install "Wild Web Developer" from Eclipse Marketplace for opening and formatting the typescript files
 
 Project Setup:
 1. Download the zip file from GitHub - "https://github.com/lvhkrishna/SocieteGenerale-ps"
