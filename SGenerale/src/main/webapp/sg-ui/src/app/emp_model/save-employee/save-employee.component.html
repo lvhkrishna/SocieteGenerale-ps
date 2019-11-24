@@ -1,0 +1,44 @@
+<div class="col-md-12">
+	<form (ngSubmit)="onSubmit()" #empForm="ngForm" id="employeeForm">
+		<div class="form-group full-width">
+			<mat-form-field>
+				<input matInput [(ngModel)]="emp.fName" #fname="ngModel" name="fname"
+					placeholder="First Name" type="text" required>
+			</mat-form-field>
+		</div>
+		<div class="form-group full-width">
+			<mat-form-field>
+				<input matInput [(ngModel)]="emp.lName" #lname="ngModel" name="lname"
+					placeholder="Last Name" type="text" required>
+			</mat-form-field>
+		</div>
+		<div class="form-group full-width">
+			<mat-form-field>
+				<mat-label>Gender</mat-label>
+				<mat-select [(ngModel)]="emp.gender" [value]="emp.gender" name="gender"
+					required>
+					<mat-option value="Male">Male</mat-option>
+					<mat-option value="Female">Female</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="form-group full-width">
+			<mat-form-field>
+				<input matInput [matDatepicker]="picker" [(ngModel)]="emp.dob" name="dob"
+					placeholder="Date of Birth" required>
+				<mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+				<mat-datepicker #picker startView="multi-year" [startAt]="startDate"></mat-datepicker>
+				<!-- <mat-placeholder class="placeholder">Date of Birth</mat-placeholder> -->
+			</mat-form-field>
+		</div>
+		<div class="form-group full-width">
+			<mat-form-field>
+				<input matInput [(ngModel)]="emp.dept" #dept="ngModel"
+					placeholder="Department" type="text" name="dept" required>
+			</mat-form-field>
+		</div>
+		<button type="submit" [disabled]="!empForm.form.valid" class="btn btn-primary">
+			Submit
+		</button>
+	</form>
+</div>

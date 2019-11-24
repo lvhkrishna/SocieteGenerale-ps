@@ -1,0 +1,37 @@
+.full-width > *{
+	width: 100%;
+}
+#employeeForm{
+	background-color: #302E2E;
+	text-align: center;
+	width: 60%;
+	margin-left: 20%;
+	padding: 0 5%;
+}
+input matInput{
+  color: #ffffff;
+}
+:host{
+	color: #ffffff;
+}
+:host /deep/ .mat-select-value-text {
+  color: #ffffff !important;
+}
+::ng-deep .mat-focused .mat-form-field-label {
+  color: #ffffff !important;
+ }
+::ng-deep.mat-form-field-underline {
+  background-color: #ffffff !important;
+}
+::ng-deep.mat-form-field-ripple {
+ background-color: #ffffff !important;;
+}
+::ng-deep .mat-form-field-label {
+  color: #ffffff !important;
+ }
+ mat-datepicker-toggle {
+  color: #ffffff !important;
+}
+::ng-deep .mat-select-arrow {
+    color: white;
+}

@@ -1,0 +1,11 @@
+.color-white, .color-white:hover, .color-white:visited{
+	color: #ffffff;
+}
+#inline-list{
+	text-align: center;
+	list-style-type: none;
+}
+#inline-list li{
+	display: inline;
+	margin-right: 5px;
+}

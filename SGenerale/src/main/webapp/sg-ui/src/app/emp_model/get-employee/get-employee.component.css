@@ -1,0 +1,16 @@
+#emp-table-wrapper {
+	text-align: center;
+}
+#emp-table {
+	color: #ffffff;
+	margin: auto;
+}
+.table-striped > thead > tr {
+	background-color: #302E2E;
+}
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   background-color: #302E2E;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: #696464;
+}

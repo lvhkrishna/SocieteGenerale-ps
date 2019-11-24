@@ -1,0 +1,24 @@
+<div id="emp-table-wrapper">
+<table id="emp-table" class="table table-striped col-8">
+	<thead>
+		<tr>
+			<th>S.No.</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Gender</th>
+			<th>DOB</th>
+			<th>Department</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let emp of sortBy('fName'); index as i">
+			<td>{{i+1}}</td>
+			<td>{{emp.fName}}</td>
+			<td>{{emp.lName}}</td>
+			<td>{{emp.gender}}</td>
+			<td>{{emp.dob}}</td>
+			<td>{{emp.dept}}</td>
+		</tr>
+	</tbody>
+</table>
+</div>
