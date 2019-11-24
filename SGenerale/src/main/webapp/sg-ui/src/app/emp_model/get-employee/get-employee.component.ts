@@ -20,7 +20,7 @@ export class GetEmployeeComponent implements OnInit {
   }
 
   sortBy(prop: string) {
-	if(this.emps.length > 0){
+	if(this.emps && this.emps.length > 0){
 		return this.emps.sort((a, b) => a[prop] > b[prop] ? 1 : a[prop] <= b[prop] ? -1 : 0);
 	}
   }
