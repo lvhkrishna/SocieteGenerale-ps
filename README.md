@@ -13,7 +13,7 @@ Project Setup:
 3. Update the project (Right click on the project in Eclipse -> Maven -> Update Project)
 4. Now Open Command Prompt
 5. cd to the root directory of the project "SocieteGenerale-ps-master"
-6. Then cd to SGenerale/src/main/webapp/sg-ui and update npm using command (npm update)
+6. Then cd to SGenerale/src/main/webapp/sg-ui and update npm using command "npm update"
 
 Running the project - Back End:
 1. In Eclipse, Right click on the project in Package Explorer -> Run As -> Spring Boot App
